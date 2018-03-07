@@ -1,5 +1,11 @@
-#ignore node modules
+#node modules
 node_modules
 
-#ignore source files
+#source files
 src
+
+#test
+test
+
+#logs
+composer-logs
