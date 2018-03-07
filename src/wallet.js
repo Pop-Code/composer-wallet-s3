@@ -208,8 +208,7 @@ export default class S3Wallet extends Wallet {
             Body: value,
             Bucket: this.options.bucketName,
             Key: this._path(name),
-            ContentType: this.constructor.determineType(value),
-            Metadata: meta
+            ContentType: this.constructor.determineType(value)
         }).promise()
     }
 
