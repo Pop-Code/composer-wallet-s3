@@ -72,3 +72,25 @@ export NODE_CONFIG='{"composer":{"wallet":{"type":"composer-wallet-s3","options"
 ```
 
 Then any application (or command line, eg `composer card list`) that is in this shell will use the cloud wallets.
+
+### Run tests
+To run tests, you must have an aws credentials profile configured on your computer and set the env variable AWS_PROFILE
+```
+AWS_PROFILE=myprofile npm test
+```
+Or using yarn
+```
+AWS_PROFILE=myprofile yarn test
+```
+
+### Build from source
+
+````
+#clone this repository
+git clone https://github.com/Pop-Code/composer-wallet-s3.git
+#go to the directory
+cd composer-wallet-s3
+#build
+npm run build
+````
+Sources will build in the ./build directory.
