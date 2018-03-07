@@ -1,6 +1,6 @@
 {
   "name": "composer-wallet-s3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Amazon s3 implementaion of the hyperledger composer wallet",
   "keywords": [
     "blockchain",
