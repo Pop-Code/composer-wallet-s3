@@ -1,0 +1,46 @@
+{
+  "name": "composer-wallet-s3",
+  "version": "1.0.0",
+  "description": "Amazon s3 implementaion of the hyperledger composer wallet",
+  "keywords": [
+    "blockchain",
+    "hyperledger",
+    "solutions",
+    "composer"
+  ],
+  "main": "build/index.js",
+  "repository": "https://github.com/Pop-Code/composer-wallet-s3.git",
+  "author": "Alex Hermann <alex.hermann@pop-code.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src -d build",
+    "test": "mocha --require babel-core/register --recursive -t 10000",
+    "licchk": "license-check"
+  },
+  "license-check-config": {
+    "src": [
+      "**/*.js",
+      "!./build/**/*.js",
+      "!./node_modules/**/*"
+    ],
+    "path": "header.txt",
+    "blocking": true,
+    "logInfo": false,
+    "logError": true
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "license-check": "^1.1.5",
+    "mocha": "^5.0.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.205.0",
+    "composer-common": "^0.18.0",
+    "debug": "^3.1.0"
+  }
+}
